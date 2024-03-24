@@ -150,7 +150,7 @@ public class Usage {
                 property = new Capture(contactName, contactEMail, serverID, organisation);
                 break;
             default:
-                property = new ThirdPlugin(contactName, contactEMail, serverID, organisation);
+                property = new ThirdPlugin(contactName, contactEMail, serverID, organisation, dataCenter);
                 ((ThirdPlugin) property).setProductName(product);
                 break;
         }

@@ -10,6 +10,10 @@ import io.zhile.crack.atlassian.license.LicenseType;
 public class ThirdPlugin extends Plugin {
     protected String productName;
 
+    public ThirdPlugin(String contactName, String contactEMail, String serverID, String organisation, boolean dataCenter) {
+        super(contactName, contactEMail, serverID, organisation, dataCenter);
+    }
+
     public ThirdPlugin(String contactName, String contactEMail, String serverID, String organisation) {
         super(contactName, contactEMail, serverID, organisation);
     }
